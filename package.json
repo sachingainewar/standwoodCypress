@@ -1,0 +1,26 @@
+{
+  "name": "cypress_3_tasks",
+  "version": "1.0.0",
+  "description": "create tests on 3 sites",
+  "main": "index.js",
+  "dependencies": {
+    "cypress-cucumber-preprocessor": "^2.0.1",
+    "cypress-plugin-tab": "^1.0.5"
+  },
+  "devDependencies": {
+    "cypress-multi-reporters": "^1.2.4",
+    "cypress-xpath": "^1.4.0",
+    "mocha": "^7.1.0",
+    "mocha-junit-reporter": "^1.23.3",
+    "mochawesome": "^5.0.0",
+    "mochawesome-merge": "^4.0.2",
+    "mochawesome-report-generator": "^4.1.0"
+  },
+  "scripts": {
+    "delete:reports": "rm cypress/results/* || true",
+    "prereport": "npm run delete:reports",
+    "report": "cypress run --reporter cypress-multi-reporters --reporter-options configFile=reporter-config.json"
+  },
+  "author": "James Dang",
+  "license": "ISC"
+}
