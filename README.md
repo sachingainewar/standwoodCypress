@@ -30,5 +30,5 @@ Please make use of cosmiconfig to create a configuration for the plugin, for exa
 
 ## Build a Cypress project test
 ### Starting a Cypress project
-
+Steps are mentioned with screen shots in guideline document attached.
 
