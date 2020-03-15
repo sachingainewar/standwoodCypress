@@ -32,3 +32,7 @@ Please make use of cosmiconfig to create a configuration for the plugin, for exa
 ### Starting a Cypress project
 Steps are mentioned with screen shots in guideline document attached.
 
+#  How executed the project 
+      Open nodejs command prompt  as And Navigate to Project folder 
+      npx cypress run
+      npx mochawesome-merge cypress/results/mochawesome*.json > mochawesome-report/output.json     (This will create a mochareports folder and convert output.json to report.html.)
